@@ -6,7 +6,6 @@ server = socket.socket()  # 默认tcp
 # server = socket.socket(socket.SOCK_DGRAM)
 
 server.bind(("127.0.0.1", 8000))
-print(server)
 server.listen()
 flag = True
 while flag:
