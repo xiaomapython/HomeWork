@@ -3,7 +3,6 @@
 import socket
 client = socket.socket()
 client.connect(("127.0.0.1", 8000))
-print(client)
 while True:
     say_to_server = input("Client say:")
     client.sendall(say_to_server.encode())
